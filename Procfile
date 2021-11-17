@@ -1,1 +1,1 @@
-web: gunicorn nokquiz.wsgi
+web: cd nokquiz; gunicorn nokquiz.wsgi;
