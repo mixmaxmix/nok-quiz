@@ -1,0 +1,1 @@
+web: gunicorn nokquiz.wsgi --log-file -
