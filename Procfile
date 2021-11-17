@@ -1,1 +1,1 @@
-web: gunicorn nokquiz.wsgi --log-file -
+web: gunicorn nokquiz.wsgi:application
