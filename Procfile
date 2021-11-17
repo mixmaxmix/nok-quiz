@@ -1,1 +1,1 @@
-web: gunicorn nokquiz.wsgi:application
+web: gunicorn nokquiz.wsgi
