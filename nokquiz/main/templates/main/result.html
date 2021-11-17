@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'main/css/result.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="container">
+            <h2 class="title">Введите имя и фамилию</h2>
+            <p class="subtitle">Эта информация нужна нам для того чтобы вставить ваши данные в документ</p>
+            <input class="input name" type="text" name="name" placeholder="Имя">
+            <input class="input lastname" type="text" name="lastname" placeholder="Фамилия">
+            <button class="submit saveBtn" type="submit">Сохранить</button>
+        </section>
+    </main>
+    <!-- <script src="{% static 'main/js/quiz.js' %}"></script> -->
+    <script src="{% static 'main/js/pdf.js' %}"></script>
+{% endblock %}

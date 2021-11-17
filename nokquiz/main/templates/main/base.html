@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'main/images/logo.svg' %}" type="image/x-icon">
+    {% block link %}
+    {% endblock %}
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="{% static 'main/images/logo.svg' %}" alt="" class="logo-img">
+            <span class="logo-title">Тестирование НОК</span>
+        </a>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

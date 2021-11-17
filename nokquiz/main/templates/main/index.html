@@ -1,0 +1,76 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'main/css/quizpre.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="home-conteiner c1">
+    <h3>Инструкции: Этот тест несет в себе тестовый характер. Вопросы на релизе могут отличаться</h3>
+    <p>Общее количество вопросов: <span class="total-questions">5</span></p>
+    <button type="button" class="btn" id="startQuiz">Начать тест</button>
+</div>
+
+
+
+<div class="quiz-conteiner c1 hide">
+    <div class="questions-number"></div>
+
+    <div class="questions-text"></div>
+
+    <div class="option-conteiner">
+
+    </div>
+
+    <div class="next-question-btn">
+        <button type="button" class="btn" id="next">Следующий</button>
+    </div>
+    <div class="answers-indicator">
+
+    </div>
+</div>
+
+
+
+<div class="result-conteiner c1 hide">
+    <h1>Результат</h1>
+    <table>
+        <tr>
+            <td>Всего вопросов</td>
+            <td><span class="total-questions"></span></td>
+        </tr>
+
+        <tr>
+            <td>Ответели</td>
+            <td><span class="total-attemp"></span></td>
+        </tr>
+
+        <tr>
+            <td>Правильные</td>
+            <td><span class="total-correct"></span></td>
+        </tr>
+
+        <tr>
+            <td>Неправильные</td>
+            <td><span class="total-wrong"></span></td>
+        </tr>
+
+        <tr>
+            <td>Проценты</td>
+            <td><span class="total-percentage"></span></td>
+        </tr>
+        <tr>
+            <td>Ваш результат</td>
+            <td><span class="total-score"></span></td>
+        </tr>
+    </table>
+
+    <div class="btns-container">
+        <button type="button" class="btn" id="tryAgain">Пробовать снова</button>
+        <button type="button" class="btn" id='goMain'>Главная</button>
+    </div>
+</div>
+<script src="{% static 'main/js/quiz.js' %}"></script>
+{% endblock %}
