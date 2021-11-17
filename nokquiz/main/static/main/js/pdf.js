@@ -37,6 +37,7 @@ function generatePDF() {
 
     html2pdf(page, {
         filename:   'result.pdf',
-        image:  { type: 'png', quality: 0.98 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+//         image:  { type: 'png', quality: 0.98 },
     });
 }
