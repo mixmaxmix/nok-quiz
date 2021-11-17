@@ -15,13 +15,15 @@ saveBtn.addEventListener('click', function() {
         main.innerHTML = 
         `
             <button class="page-download">Загрузить файл</button>
-            <div id="page">
-                <h1 class="page-title page-center">Поздравляем!</h1>
-                <p class="page-text page-center">У вас получилось сдать тест.</p>
-                <div class="page-break"></div>
-                <h3 class="page-text">Имя: ${nameVal}</h3>
-                <h3 class="page-text">Фамилия: ${lastnameVal}</h3>
-                <p class="page-warning">Это тестовый документ. Он не является юридическим документом</p>
+            <div class="page-container">
+                <div id="page">
+                    <h1 class="page-title page-center">Поздравляем!</h1>
+                    <p class="page-text page-center">У вас получилось сдать тест.</p>
+                    <div class="page-break"></div>
+                    <h3 class="page-text">Имя: ${nameVal}</h3>
+                    <h3 class="page-text">Фамилия: ${lastnameVal}</h3>
+                    <p class="page-warning">Это тестовый документ. Он не является юридическим документом</p>
+                </div>
             </div>
         `
         generatePDF();
