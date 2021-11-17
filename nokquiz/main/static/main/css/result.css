@@ -55,11 +55,16 @@ main {
     opacity: 0.8;
 }
 
-#page {
-    padding: 50px;
+.page-container {
+    margin-top: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#page {
+    padding: 20px;
     min-height: 700px;
     margin: 50px;
+    background: #fff;
 }
 
 .logo-pdf {
